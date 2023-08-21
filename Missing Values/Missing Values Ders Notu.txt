@@ -1,0 +1,6 @@
+Eksik değerler gözlemlerde eksiklik olması durumunu ifade eder. NA değerlerdir. 3 farklı biçimden ele alınabilir:
+1.Silme : Eksik veriyi silme
+2.Değer Atama : Veriye ortalama, mod, medyan gibi değerler atanır.
+3.Tahmin : Makine öğrenmesi yöntemleriyle değer ataması
+Eksik verilerin rassallığı çok önemlidir. Yani eksik verilerin rastgele mi eksik olduğu yoksa bir nedene bağlı olarak mı eksik olduğunun tespit edilmesi lazımdır. Örneğin bir kredi kartı kullanımı verisetinde harcama kısmı NA ise rastgele olarak da eksik olmuş olabilir o kişi kredi kartı kullanmıyor da olabilir.
+Ağaç yöntemlerinde aykırılıklar ve eksiklikler gözardı edilebilir.

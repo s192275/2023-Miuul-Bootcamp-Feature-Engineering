@@ -1,0 +1,9 @@
+Outliers (Aykırı Değerler) : Verideki değerlerin oldukça dışına çıkan değerlere denir
+Ağaç yöntemlerinde aykırı değerlerin etkisi oldukça düşükken linear fonksiyonlarda oldukça fazladır.
+Aykırı değerler şu yöntemlerle hesaplanabilir:
+1.Sektör Bilgisi : Örneğin bir ev satım modeli hesaplanırken 1000 m^2 lik evlerin dahil edilmemesi gibi.
+2.Standart Sapma Yaklaşımı : Standart sapma ve ortalama hesaplanıp ortalama + 2 * standart sapma ya da ortalama - 2 * standart sapma aralığı dışındakilere outlier demek.
+3.Z-Skoru Yaklaşımı : İstatistiksel olarak z dağılımı uygulayıp dağılım dışındakileri outlier olarak belirlemek.
+4.Boxplot(Interquartile Range) : Boxplot çizdirip iqr değerini Q3 - Q1 olarak belirleyip Q3 + 1.5 * iqr ve Q1 - 1.5 * iqr değeri dışındakileri outlier olarak belirlemek.
+Çok Değişkenli Aykırı Değer Analizi (Local Outlier Factor)
+Farklı değişkenlerle değerlendirilince aykırı değerlerin açığa çıkmasına denir. Örneğin yaş değişkeni ve evlilik değişkenlerini ayrı ayrı incelersek 17 yaş ve 3 evlilik aykırı değildir ama bunları beraber incelersek 17 yaşında birinin 3 evlilik yapmış olması aykırı bir olaydır. Local Outlier Factor ile birlikte bu gözlemler bulundukları tabanda yoğunluklarına göre analiz edilip bir değer döndürülür. Değer +-1 e yakınsa aykırı olma olasılığı düşer.

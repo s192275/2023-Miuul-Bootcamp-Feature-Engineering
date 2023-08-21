@@ -1,0 +1,5 @@
+Encode etmek değişkenlerin temsil şekilleriyle ilgili değişiklik yapmaktır.Nominal kategorik değişkenler label encoding ten geçemezken ordinal kategorik değişkenler geçebilir. Nominaller one hot encoder dan geçerler.
+Rare encoding frekansı çok düşük olan gözlemleri bir araya getirir ve onların hepsini bir değişken olarak tanıtır.
+Tüm değişkenleri eşit şartlar altında değerlendirebilmek için Feature Scaling yöntemini kullanırız. Ayrıca bu bize Gradient Descent algoritmasında hız kazandırır. Ağaca dayalı algoritmalar bu yöntemlerden etkilenmez.
+Standart Scaler = z = (x - u) / s
+Robust Standart Scaler = (x - q2) / iqr
